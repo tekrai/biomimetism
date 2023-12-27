@@ -36,15 +36,15 @@ def generate_sound_plot(frequency, duration):
 
 def main():
     # Paramètres de l'algorithme
-    frequency = 10000  # fréquence du son
-    duration = 0.01  # durée du son
-    sound_speed = 340  # vitesse du son
+    frequency = 300  # fréquence du son
+    duration = 0.51  # durée du son
+    sound_speed = 590  # vitesse du son
 
     # Initialisation des variables
-    robot_x = 0
-    robot_y = 0
-    obstacle_x = 3
-    obstacle_y = 4
+    robot_x = 5
+    robot_y = 2
+    obstacle_x = 2
+    obstacle_y = -0.5
 
     # Émission du son
     print("Émission du son...")
@@ -54,6 +54,8 @@ def main():
 
     distance = calculate_distance(sound_speed, duration, 0.01)
     direction = calculate_direction(robot_x, robot_y, obstacle_x, obstacle_y)
+    print(distance)
+    print(direction)
 
     # Affichage du graphique
     generate_sound_plot(frequency, duration)
