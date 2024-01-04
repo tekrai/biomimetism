@@ -41,10 +41,10 @@ def main():
     sound_speed = 590  # vitesse du son
 
     # Initialisation des variables
-    robot_x = 5
+    robot_x = 3
     robot_y = 2
-    obstacle_x = 2
-    obstacle_y = -0.5
+    obstacle_x = 6
+    obstacle_y = 10
 
     # Émission du son
     print("Émission du son...")
@@ -54,8 +54,8 @@ def main():
 
     distance = calculate_distance(sound_speed, duration, 0.01)
     direction = calculate_direction(robot_x, robot_y, obstacle_x, obstacle_y)
-    print(distance)
-    print(direction)
+    print('Distance :', distance)
+    print('Direction :', f'{direction:.2f}')
 
     # Affichage du graphique
     generate_sound_plot(frequency, duration)
