@@ -64,7 +64,7 @@ def main():
     plt.plot([obstacle_x, obstacle_x], [obstacle_y, obstacle_y], "o")
     plt.plot([robot_x, obstacle_x], [robot_y, obstacle_y], "-r")
     plt.arrow(obstacle_x, obstacle_y, 0, direction, head_width=0.1, head_length=0.1)
-    plt.annotate("Distance :", (obstacle_x, obstacle_y + 0.5), size=10)
+    plt.annotate("Distance :", (obstacle_x + 0.01, obstacle_y + 0.75), size=10)
     plt.annotate(str(distance), (obstacle_x, obstacle_y + 0.25), size=10)
     plt.show()
 
